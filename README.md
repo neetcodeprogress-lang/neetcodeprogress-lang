@@ -1,5 +1,5 @@
-### Open source contributions
----
+## Open source contributions
+
 Helped rewrite the automated tests for `freeCodeCamp`'s JavaScript curriculum labs, replacing brittle regex checks with AST-based tests using the project's Explorer helper. The new tests check the actual structure of a learner's code, so they're harder to fool and give clearer feedback when something's wrong.
 
 - **[Inventory Management lab](https://github.com/freeCodeCamp/freeCodeCamp/pull/68729)**: replaced the regex test for the `inventory` array, and added an existence check so a missing declaration fails with a clear message instead of a JavaScript error.
