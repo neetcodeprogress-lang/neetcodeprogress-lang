@@ -1,7 +1,10 @@
 ### Open source contributions
-https://github.com/freeCodeCamp/freeCodeCamp/pull/68729
-https://github.com/freeCodeCamp/freeCodeCamp/pull/68900
-https://github.com/freeCodeCamp/freeCodeCamp/pull/70055
+---
+Helped rewrite the automated tests for `freeCodeCamp`'s JavaScript curriculum labs, replacing brittle regex checks with AST-based tests using the project's Explorer helper. The new tests check the actual structure of a learner's code, so they're harder to fool and give clearer feedback when something's wrong.
+
+- **[Inventory Management lab](https://github.com/freeCodeCamp/freeCodeCamp/pull/68729)**: replaced the regex test for the `inventory` array, and added an existence check so a missing declaration fails with a clear message instead of a JavaScript error.
+- **[Profile Lookup lab](https://github.com/freeCodeCamp/freeCodeCamp/pull/68900)**: replaced the regex tests and added checks that `contacts` exists and is an array, and that `lookUpProfile` takes two parameters, with an updated hint for learners. Verified each check by deliberately breaking the solution.
+- **[Voting System lab](https://github.com/freeCodeCamp/freeCodeCamp/pull/70055)**: replaced the regex-based tests with Explorer-based tests.
 <!--
 **neetcodeprogress-lang/neetcodeprogress-lang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
